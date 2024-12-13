@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Usuarios</title>
+    <!-- Enlace al archivo de estilos CSS -->
+    <link rel="stylesheet" href="/style/usuarios.css">
+</head>
+<body>
+    <header>
+        <h1>Gestión de Usuarios</h1>
+        <!-- Botón de regresar -->
+        <button id="backButton" class="back-button">Regresar</button>
+    </header>
+
+    <main>
+        <!-- Sección para listar usuarios -->
+        <section>
+            <h2>Lista de Usuarios</h2>
+            <table id="usuariosTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre de Usuario</th>
+                        <th>Contraseña</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí se llenarán los usuarios dinámicamente -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Sección para agregar usuarios -->
+        <section>
+            <h2>Agregar Usuario</h2>
+            <!-- Formulario para registrar un nuevo usuario -->
+            <form id="register-form">
+                <label for="new-username">Nombre de usuario:</label>
+                <input type="text" id="new-username" required>
+                
+                <label for="new-password">Contraseña:</label>
+                <input type="password" id="new-password" required>
+                
+                <button type="submit">Registrar</button>
+            </form>
+            <!-- Mensaje de error que se muestra si hay un problema al registrar -->
+            <div id="registerErrorMessage" style="color: red; display: none;"></div>
+        </section>
+    </main>
+
+    <!-- Enlace a los archivos de scripts -->
+    <script src="/scripts/usuarios.js"></script>
+    <script src="/scripts/particles.js"></script>
+</body>
+</html>

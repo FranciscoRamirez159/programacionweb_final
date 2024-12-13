@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- Enlace al archivo de estilos CSS -->
+    <link rel="stylesheet" href="/style/dashbord.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>TEC STORE</h1>
+            <!-- Botón para agregar un nuevo producto -->
+            <button id="addProductBtn">Agregar Producto</button>
+        </div>
+        
+        <div class="profile-icon">
+            <img src="/imagenes/icono.jpg" alt="Profile Icon" id="profileIcon">
+            <div class="profile-menu" id="profileMenu">
+                <ul>
+                    <li><a href="usuarios.html">Perfil</a></li>
+                    <li><a href="login.html">Cerrar Sesión</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <h2>Lista de Productos</h2>
+
+        <!-- Contenedor para los productos -->
+        <div class="products" id="productsContainer"></div>
+
+        <!-- Paginación -->
+        <div class="pagination">
+            <button id="prevPageBtn" disabled>Página Anterior</button>
+            <button id="nextPageBtn">Página Siguiente</button>
+        </div>
+    </main>
+
+    <!-- Contenedor de partículas (fuegos artificiales) -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Enlace a los archivos de scripts -->
+    <script src="/scripts/crud.js"></script>
+    <script src="/scripts/fireworks.js"></script>
+</body>
+</html>

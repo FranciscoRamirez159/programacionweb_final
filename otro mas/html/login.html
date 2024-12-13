@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- Enlace al archivo de estilos CSS -->
+    <link rel="stylesheet" href="/style/login.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <h1>Iniciar Sesión</h1>
+        <!-- Formulario de inicio de sesión -->
+        <form id="login-form">
+            <!-- Campo para el nombre de usuario -->
+            <input type="text" id="username" placeholder="Usuario" required>
+            <!-- Campo para la contraseña -->
+            <input type="password" id="password" placeholder="Contraseña" required>
+            <!-- Botón para enviar el formulario -->
+            <button type="submit">Entrar</button>
+        </form>
+        <!-- Mensaje de error que se muestra si el usuario o la contraseña son incorrectos -->
+        <p id="errorMessage" style="color: red; display: none;">Usuario o contraseña incorrectos</p>
+    </div>
+    <!-- Enlace a los archivos de scripts -->
+    <script src="/scripts/auth.js"></script>
+    <script src="/scripts/particles.js"></script>
+</body>
+</html>
